@@ -1,0 +1,284 @@
+* {
+  /* Seletor universal */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#top {
+  /* # para chamar ID como seletor */
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+
+#bot {
+  background-color: #47010d;
+  height: 7vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  width: 6vw;
+  margin-left: 2vw;
+}
+
+h1 {
+  color: #8B1036;
+  font-size: 5vw;
+  margin-left: 30vw;
+}
+
+button {
+  height: 5vh;
+  width: auto;
+  background-color: #7c0027;
+  color: white;
+  font-size: 3vh;
+  border-radius: 5px;
+  border: none;
+  margin-right: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+button:hover {
+  height: 5vh;
+  width: auto;
+  background-color: #c93c68;
+  color: white;
+  font-size: 3vh;
+  border-radius: 5px;
+  border: none;
+  margin-right: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.imgSlide {
+  width: 100%;
+  height: 100%;
+}
+
+/*Slide------------------------------------------------------*/
+html {
+  background: #F7F5E6;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #F7F5E6;
+  width: 100%;
+  display: flex;
+  background-image: url("assets/img/anime-boku-no-hero-academia-bleach-jujutsu-kaisen-red-hd-wallpaper-preview.jpg");
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.slider {
+  margin: 0 auto;
+  max-width: 940px;
+  margin-top: 5vh;
+  border-radius: 15px;
+  width: 110vh;
+  margin-bottom: 13vh;
+}
+
+.slider {
+  -webkit-box-shadow: 0px 0px 7px 19px rgba(0, 0, 0, 0.363);
+  -moz-box-shadow: 0px 0px 7px 19px rgba(0, 0, 0, 0.363);
+  box-shadow: 0px 0px 7px 19px rgba(0, 0, 0, 0.363);
+}
+
+.slide_viewer {
+  height: 340px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+  background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+  background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+  background: #D1D1D4;
+}
+
+.slide_buttons {
+  top: 72vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+a.slide_btn {
+  color: #474544;
+  font-size: 42px;
+  margin: 0 0.175em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: #428CC6;
+  cursor: pointer;
+}
+
+.directional_nav {
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  top: -40vh;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 2vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 2vw;
+  top: 0;
+}
+
+.previous_btn,
+.next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover,
+.next_btn:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .previous_btn {
+    left: 50px;
+  }
+
+  .next_btn {
+    right: 50px;
+  }
+}
+
+/*Postagens------------------------------------------------------*/
+
+.postagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#47010d;
+  ;
+  width: 69vw;
+  height: auto;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border-radius: 2vh;
+}
+
+.postagem {
+  width: 80%;
+}
+
+.tituloDiv {
+  color: white;
+  font-size: 7vh;
+  text-align: center;
+  margin-bottom: 3vh;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgPost {
+  width: 100%;
+  border-radius: 1vh;
+  margin-top: 5vh;
+}
+
+.tituloPost {
+  color: white;
+  font-size: 6vh;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.textoPost {
+  color: white;
+  font-size: 3vh;
+  text-align: justify;
+  margin-bottom: 5vh;
+}
+
+/*Footer------------------------------------------------------*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color:#47010d;
+  margin-top: 20vh;
+}
+
+.direitos {
+color: white;
+font-size: 4vh;
+text-align: center;
+margin-top: 3vh;
+margin-bottom: 3vh;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
